@@ -1,0 +1,18 @@
+<div class="card-container">
+  @for (card of summary; track card.label) {
+    <p-card>
+      <p>{{ card.label }}</p>
+      <h2>{{ card.total }}</h2>
+      <h6>{{ card.note }}</h6>
+    </p-card>
+  }
+</div>
+<div class="message-container">
+  <p-message
+    >{{ message }}
+    <button (click)="showDialog()">Crea ordine di acquisto</button>
+  </p-message>
+</div>
+
+<app-item-dialog [visible]="isVisible()" (visibleChange)="isVisible.set($event)" />
+<!-- versione estesa di [(visible)]= "isVisible", che funziona solo con variabili semplici, non con signal -->
