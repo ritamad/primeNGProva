@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 60px;
-  height: 100vh;
+  height: calc(100vh - 64px);
   background-color: #1a1a1a;
 }
 
@@ -13,6 +13,10 @@ nav {
   height: 100%;
   padding: 12px 0;
   align-items: center;
+}
+
+.nav-bottom {
+  margin-top: auto;
 }
 
 div {
