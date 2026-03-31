@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { Card } from './card/card';
 import { Inventory } from './inventory/inventory';
 import { Sidebar } from './sidebar/sidebar';
+import { Header } from './header/header';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Card, Inventory, Sidebar],
+  imports: [RouterOutlet, Card, Inventory, Sidebar, Header],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
