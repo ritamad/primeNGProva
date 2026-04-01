@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { InputTextModule } from 'primeng/inputtext';
 import { IconFieldModule } from 'primeng/iconfield';
 import { InputIconModule } from 'primeng/inputicon';
+import { DarkModeService } from '../services/dark_mode.service';
 
 @Component({
   selector: 'app-header',
@@ -10,4 +11,8 @@ import { InputIconModule } from 'primeng/inputicon';
   templateUrl: './header.html',
   styleUrl: './header.css',
 })
-export class Header {}
+export class Header {
+
+  darkModeService = inject(DarkModeService);
+  
+}
