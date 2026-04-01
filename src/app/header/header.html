@@ -15,7 +15,10 @@
   </div>
 
   <div class="header-right">
-    <i class="pi pi-moon"></i>
+    <i
+      [class]="darkModeService.isDark() ? 'pi pi-sun theme-icon' : 'pi pi-moon theme-icon'"
+      (click)="darkModeService.onToggle()"
+    ></i>
     <i class="pi pi-sign-out"></i>
     <i class="pi pi-user"></i>
   </div>

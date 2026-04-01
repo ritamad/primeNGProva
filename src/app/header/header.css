@@ -41,3 +41,8 @@ img {
   height: 65px;
   object-fit: cover;
 }
+
+.theme-icon {
+  font-size: 1rem;
+  cursor: pointer;
+}
