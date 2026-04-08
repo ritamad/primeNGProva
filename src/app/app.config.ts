@@ -5,8 +5,8 @@ import { routes } from './app.routes';
 import { providePrimeNG } from 'primeng/config';
 import Aura from '@primeuix/themes/aura';
 import { provideHttpClient } from '@angular/common/http';
-import { INVENTORY_SERVICE } from './services/inventory.token';
-import { MockInventoryService } from './services/mock-inventory.service';
+import { INVENTORY_SERVICE } from './core/services/inventory.token';
+import { MockInventoryService } from './core/services/mock-inventory.service';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -21,8 +21,8 @@ export const appConfig: ApplicationConfig = {
       theme: {
         preset: Aura,
         options: {
-          darkModeSelector: '.dark-mode'
-        }
+          darkModeSelector: '.dark-mode',
+        },
       },
     }),
   ],

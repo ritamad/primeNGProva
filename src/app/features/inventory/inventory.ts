@@ -4,8 +4,8 @@ import { TableModule } from 'primeng/table';
 import { SelectModule } from 'primeng/select';
 import { FormsModule } from '@angular/forms';
 import { InputTextModule } from 'primeng/inputtext';
-import { INVENTORY_SERVICE } from '../services/inventory.token';
-import { Item } from '../services/inventory.interface';
+import { INVENTORY_SERVICE } from '../../core/services/inventory.token';
+import { Item } from '../../core/services/inventory.interface';
 
 @Component({
   selector: 'app-inventory',
