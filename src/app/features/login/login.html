@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="header">
+    <img src="assets/alten.png" alt="Logo Pippo S.p.A." />
+    <span>Stock Manager</span>
+  </div>
+
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="email">Email</label>
+      <input
+        pInputText
+        id="email"
+        type="email"
+        formControlName="email"
+        placeholder="Inserisci la tua email"
+      />
+    </div>
+
+    <div>
+      <label for="password">Password</label>
+      <p-password
+        inputId="password"
+        formControlName="password"
+        placeholder="Inserisci la tua password"
+        [feedback]="false"
+        [toggleMask]="true"
+      ></p-password>
+    </div>
+
+    <p-button type="submit" label="Accedi"></p-button>
+  </form>
+
+  <a href="#">Hai dimenticato la password?</a>
+</div>
